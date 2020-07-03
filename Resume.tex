@@ -1,0 +1,341 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Carson Page}
+\newcommand{\CVTitle}{Carson Page's Resume for Collins}
+\newcommand{\CVNote}{Resume compiled on {\today} for Collins}
+\newcommand{\CVWebpage}{https://carson.page/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+7301 Alma Dr. Apt 1612, Plano, Texas 75025
+\par
+\href{mailto:me@carson.page}
+{me@carson.page}
+\,\SubBulletSymbol\,
++1\,(512)\,630-6908
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://utdallas.edu/}
+{\textbf{The University of Texas at Dallas}},
+Richardson, Texas
+\hfill
+\DatestampYMD{2017}{08}{19} -- Present
+\Gap
+\BulletItem
+B.S. in
+\href{https://cs.utdallas.edu/}
+{Computer Science} (Expected \DatestampYM{2021}{5})
+
+\BigGap
+\Entry
+\textbf{Hutto High School}
+Hutto, Texas
+\hfill
+\DatestampYM{2017}{05}
+\Gap
+\BulletItem Diploma
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExpiriance}
+
+% \Entry
+% \href{https://www.collinsaerospace.com/}{\textbf{Collins Aerospace}},
+% Richardson, Texas
+% \hfill
+% \DatestampYM{2020}{01} -- Present
+% \Gap
+% Software Engineer, Co-Op
+% HFGCS, Mission Software Systems
+% \begin{Detail}
+% \BulletItem
+% Developed tools and systems for testing and intergration of HFGCS software.
+% \BulletItem
+% Partipated in critical project to update 
+% \end{Detail}
+
+\BigGap
+\Entry
+\href{https://byterealm.com/}{\textbf{Byte Realm Solutions LLC}},
+Dallas, Texas
+\hfill
+% \DatestampYM{2018}{02} -- \DatestampYM{2019}{12}
+\DatestampYM{2018}{02} -- Present
+\Gap
+Software Developer, Self-Employed
+\begin{Detail}
+\BulletItem
+Provide software consulting and design services.
+\BulletItem
+Develop and maintain web solutions for customers.
+\BulletItem
+Maintain infrastructure and IT resources in both cloud and on-prem enviroments.
+\BulletItem
+Assist on IoT development and deployment project.
+\BulletItem
+Continued work for X-Microwave on a contractual basis,
+assuming many previous responsibilities.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://keysight.com/}{\textbf{Keysight Technologies}},
+Dallas, Texas (Remote)
+\hfill
+\DatestampYM{2018}{02} -- \DatestampYM{2018}{10}
+\Gap
+Software Developer
+\begin{Detail}
+\BulletItem
+Internship with Keysight Eagleware team, responsible for
+Genesys, SystemVue, and other EDA products.
+\BulletItem
+Developed new device library management system for Genesys, including
+automatic installer and update functionality.
+\BulletItem
+Improved vendor tooling, enabling easier automation of library generation.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://www.xmicrowave.com/}{\textbf{X-Microwave LLC}},
+Round Rock, Texas
+\hfill
+\DatestampYM{2014}{04} -- \DatestampYM{2017}{12}
+\Gap
+Software Developer
+\begin{Detail}
+\BulletItem
+Designed and maintained the first web-based non-linear RF / Microwave simulator.
+\BulletItem
+Maintained on-site Active Directory and group policies.
+\BulletItem
+Managed company network security, including firewall rules and monitoring.
+\BulletItem
+Developed online web applications, deployed on Amazon Web Services for external
+and internal use.
+\BulletItem
+Maintained company website written with Wordpress / PHP.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+%% Woe is me
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\Gap
+\BulletItem
+Academic Excellence Scholarship
+\hfill
+\DatestampYMD{2017}{08}{19}
+\newline
+The University of Texas of Dallas
+\begin{Detail}
+\Item
+Partial-tuition scholarship for undergraduate studies.
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Activities \& Organizations}
+{Activities \& Organizations}
+{PDF:ActivitiesOrganizations}
+
+\Entry
+\textbf{Neighborhood WISP Co-Op}
+\newline
+Georgetown, Texas
+
+System Administrator
+\hfill
+\DatestampY{2015} -- \DatestampY{2017}
+\begin{Detail}
+\BulletItem
+Helped design and maintain a small wireless ISP for the
+aviation community I lived in on a volunteer basis.
+\BulletItem
+Operated multiple 5GHz UNII band PtP and PtMP links, oversaw network
+design and upgrades.
+\end{Detail}
+% Manual page break.
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Programming:
+C,
+C++,
+C\#,
+Rust.
+
+\Gap
+\BulletItem
+Scripting: Bash, JavaScript, PHP, Python, SQL, Pg/SQL.
+
+\BulletItem
+Hardware: Verilog / SystemVerilog,
+VHDL.
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+% {\TeX}, {\LaTeX}, {\XeLaTeX},
+% MATLAB,
+% Mathematica,
+% Maple,
+% R,
+% Tableau,
+% Adobe Photoshop,
+% Adobe Illustrator,
+% Microsoft Word,
+% Microsoft Excel,
+% Microsoft PowerPoint.
+Active Directory,
+Amazon Web Services,
+CI/CD Pipelines,
+COM / WinApi,
+Embedded Design,
+FPGA Design,
+FreeRTOS,
+Git,
+Linux,
+PostgreSQL,
+Relational Database Design,
+Shell Scripting,
+WPF.
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+\href{https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3209531}{Amateur Radio - General Class}
+\newline
+Digital Electronics
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
